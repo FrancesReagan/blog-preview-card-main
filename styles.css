@@ -1,103 +1,100 @@
-
-
-/* set the root For the var() function */
-:root {
-  --colorBackground: rgb(244,208,78);
-  --colorCard: rgb(1, 0, 0);
-  --colorParagraph: rgb(0, 0,50);
-  --colorTitles: hsl(0, 0%, 7%);
-}
-
-@font-face {
-  font-family: 'Figtree';
-  src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Figtree';
-  src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Figtree';
-  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
 }
 
 body {
+  background-color: #F4D04E;
+}
+
+a {
+  color:#000;
+  text-decoration: none;
+}
+
+#bpv-card-container {
+  width: 384px;
+  height: 565px;
+  background-color: #fff;
+  border-radius: 20px;
+  border:1px solid black;
+  box-shadow: 8px 8px 0px 0px#000 ;
+  padding: 1.2rem;
+  margin: 3rem auto;
+}
+
+.bpv-card-img {
   display: flex;
-  margin: 0;
-  padding: 0;
-  background: var(--colorBackground);
-  height: 100vh;
+  align-items: centerj
   justify-content: center;
-  align-items: center;
-  font-family: "Figtree";
-  font-size: 0.9375em;
 }
 
-.card{
-  display:flex;
-  flex-direction:column;
-  max-width: 330px;
-  background-color: var(--colorCard);
-  border-radius: 15px;
-  border: 1px solid var(--colorParagraph)
-  box-shadow: 8px 9 px 0 0 var(--colorTitles);
-}
-
-.card:hover{
-  transform: scale(0.9);
-  cursor: pointer;
-}
-
-.card-content{
-  padding: 15px;
-  
-   .illustration {
-  width: 100%;
+.bpv-card-img img {
   border-radius: 10px;
-  margin-bottom: 15px;
-   }
 }
 
-
-h1 {
-  background-color: var(--colorBackground)
-  padding: 5px 8px;
-  border-radius: 5px;
-  font-size: 0.75em
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 1.375em;
-  font-weight: 800;
-}
-
-p {
-  color: var(--colorParagraph);
-  margin-top: 0;
-  line-height: 1.25em;
-  font-weight: normal;
+.bpr-card-text {
+  margin-top: 1.2rem;
+  margin-left 5px;
 
 }
 
-.Author {
+.background-color-yellow{
+  background-color: #F4D04E;
+  padding: 4px 12px;
+  border-radius: 4px;
+  width: 90px;
+}
+
+.datepublished { 
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.bpr-post-title {
+  font-size: 20px;
+  font-weight: 500;
+  marign-top: 0.7rem;
+  margin-bottom: 1rem;
+  transition: color 0.2 ease-in;
+}
+
+.bpr-post-title:hover {
+  color: #F4D04E;
+}
+
+.bpr-text {
+  color: #7f7f7f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+
+}
+
+.avatar-author-container {
+  display: flex;
   align-items: center;
-  img {
-    height: 2.1875em;
+}
+
+.avatar-author-container {
+margin-left: 1rem;
+font-size: 14px;
+font-weight: 800;
+}
+
+@media screen and (max-width: 500px) {
+  #bpv-card-container {
+    width: 86%;
+    margin: 1.6rem auto
+  }
+
+  .bpv-card-img img {
+    width: 100%;
   }
 }
-
-h3 {
-  color: var(--colorTitles);
-  font-size: 0.8125em
-  margin-left: 5px
-}
-
-
-
-
