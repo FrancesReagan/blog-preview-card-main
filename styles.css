@@ -80,6 +80,19 @@ a {
 .avatar-author-container {
   display: flex;
   align-items: center;
-    
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 500px) {
+  #bpv-card-container {
+    width: 86%;
+    margin: 1.6rem auto
+  }
+
+  .bpv-card-img img {
+    width: 100%;
+  }
+}
 
 
